@@ -22,7 +22,7 @@
 
     
     var token_id = null;
-    
+
     $('#pay-now-btn').click(function() {
 
       var price = 50;
@@ -73,6 +73,7 @@
       var paymentID = urlPaymentID;
       token_id = sessionStorage.getItem('token_id');
 
+      sessionStorage.removeItem('token_id');
 
       console.log("Token is here:" + token_id);
       
